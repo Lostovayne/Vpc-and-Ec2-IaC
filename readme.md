@@ -1,12 +1,8 @@
 # AWS VPC Architecture - Public Subnet with NGINX
 
 <div align="center">
-  <img src="resource/aws-archi.png" alt="AWS VPC Architecture with NGINX" width="800"/>
+  <img src="resource/aws-archi.png" alt="AWS VPC Architecture with NGINX" width="500"/>
 </div>
-
-Este proyecto documenta una arquitectura fundacional en AWS diseñada para exponer un servidor web (NGINX) a Internet utilizando una **VPC con una única subred pública**. Este diseño está estructurado para ser aprovisionado como Infraestructura como Código (IaC) mediante **Terraform**.
-
----
 
 ## Arquitectura
 
