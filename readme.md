@@ -77,11 +77,12 @@ Los Security Groups en AWS son _stateful_. Esto significa que si se permite una 
 
 ## 6. EC2 Instance (NGINX)
 
-Recurso de cómputo (máquina virtual) aprovisionado dentro de la subred pública.
+Recurso de cómputo (máquina virtual) aprovisionado dentro de la subred pública en la región **us-east-1**.
 
-- Sistema Operativo configurado para ejecutar el servidor web o proxy inverso **NGINX**.
-- Vinculado al Security Group definido para aceptar tráfico web estándar.
-- Requiere la asignación de una IP Pública o Elastic IP para ser accesible desde el exterior de la VPC.
+- **AMI (Amazon Machine Image):** Utiliza la imagen `ami-07dd30dfbe0deecc2` (preconfigurada).
+- **Instance Type:** `t3.micro` (instancia de propósito general adecuada para cargas ligeras y entornos de prueba).
+- **Red:** Se le asigna automáticamente una IP Pública en su creación (`associate_public_ip_address = true`) para ser accesible desde el exterior de la VPC.
+- **Seguridad:** Vinculado al Security Group `public-http-traffic` definido para aceptar tráfico web estándar.
 
 ---
 
